@@ -11,8 +11,8 @@
     "restart": "pm2 restart Godzila"
   },
   "dependencies": {
-    "@whiskeysockets/baileys": "npm:@dark-yasiya/baileys",
-    "jimp": "^0.22.12",
+    "@whiskeysockets/baileys": "^7.0.0-rc.3",
+    "jimp": "^1.6.0",
     "@adiwajshing/keyed-db": "^0.2.4",
     "@dark-yasiya/yt-dl.js": "1.0.5",
     "@ffmpeg-installer/ffmpeg": "^1.1.0",
