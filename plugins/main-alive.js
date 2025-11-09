@@ -30,9 +30,21 @@ lite({
 🍀 *${config.DESCRIPTION}*
 `.trim();
 
+        const buttons = [
+            {
+                name: "quick_reply",
+                buttonParamsJson: JSON.stringify({
+                    display_text: "🏠 Main Menu",
+                    id: `${config.PREFIX}mainmenu`
+                })
+            }
+        ];
+
         await conn.sendMessage(from, {
             image: { url: config.MENU_IMAGE_URL },
             caption,
+            footer: "⚡ Powered by Godzilla MD",
+            templateButtons: buttons,
             contextInfo: {
                 mentionedJid: [sender],
                 forwardingScore: 1000,
