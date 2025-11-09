@@ -1,0 +1,58 @@
+{
+  "name": "GODZILA-MD",
+  "description": "ᴘᴏᴡᴇʀꜰᴜʟʟ ᴡʜᴀᴛꜱᴀᴘᴘ ʙᴏᴛ ᴍᴀᴅᴇ ʙʏ ɴɪᴍᴇꜱʜᴋᴀ ᴍɪʜɪʀᴀɴ",
+  "logo": "https://files.catbox.moe/qumhu4.jpg",
+  "keywords": ["GODZILA-MD","NENO-MD"],
+  "success_url": "/",
+
+    "stack": "container",
+  "env": {
+    "SESSION_ID": {
+      "description": "Must Start with 'lite~'",
+      "required": true,
+      "value": ""
+    },
+      "BOT_NAME": {
+        "description": "write here your bot name.",
+        "required": true,
+        "value": "ɢᴏᴅᴢɪʟᴀ-ᴍᴅ"      
+    },  
+    "MODE": {
+      "description": "Set private/public/inbox/groups",
+      "required": false,
+      "value": "public"
+     },
+   
+    "PREFIX": {
+      "description": "Your Bot Prefix (default: .) You can put your own custom prefix",
+      "required": true,
+      "value": "."
+    },
+    
+    "OWNER_NAME": {
+      "description": "Put Owner Name Here",
+      "required": true,
+      "value": "ɴɪᴍᴇꜱʜᴋᴀ ᴍɪʜɪʀᴀɴ"
+    },
+    "OWNER_NUMBER": {
+      "description": "Put only one Owner Number Here",
+      "required": true,
+      "value": "94721584279"
+    },
+    
+    "PRESENCE": {
+      "description": "Put online/typing/recording/unavailable",
+      "required": true,
+      "value": "online"
+    }
+
+},
+
+     "buildpacks": [
+        {
+            "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+        }
+     ],
+  "stack": "heroku-24"
+}
+  
